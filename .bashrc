@@ -117,4 +117,5 @@ fi
 
 # PS1='\[\033[0m\]\u@\h \[\033[0;35m\]\w\[\033[0m\]$ '
 
-alias em='emacs -q -Q -fs --no-window-system'
+alias emt='emacs -q -Q -fs --no-window-system'
+alias em='emacs'
