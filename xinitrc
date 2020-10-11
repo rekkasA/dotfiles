@@ -1,5 +1,5 @@
-compton --config /home/arekkas/.config/compton/compton.conf &
+compton --config /home/arekkas/.config/compton.conf &
 dunst &
-feh --bg-scale /home/arekkas/wallpapers/0279.jpg &
+feh --bg-center /home/arekkas/wallpapers/0296.jpg &
 exec slstatus &
 exec dwm

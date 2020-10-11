@@ -1,6 +1,6 @@
 
 !--------------------xdefauls
-URxvt.font:		 xft:inconsolata:pixelsize=17
+URxvt.font:		 xft:mononoki:pixelsize=18
 urxvt*background:        #373737
 urxvt*foreground:        #7f8f9f
 urxvt*scrollBar:         false
