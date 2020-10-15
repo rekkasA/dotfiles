@@ -1,6 +1,3 @@
-export PATH=/sbin:/home/arekkas/scripts:$PATH
-
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -115,7 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# PS1='\[\033[0m\]\u@\h \[\033[0;35m\]\w\[\033[0m\]$ '
 
-alias emt='emacs -q -Q -fs --no-window-system'
-alias em='emacs'
+alias em="emacsclient -c -a 'emacs'"
+alias ls="exa -al --color=always --group-directories-first"
