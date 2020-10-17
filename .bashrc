@@ -116,4 +116,4 @@ fi
 alias em="emacsclient -c -a 'emacs'"
 alias ls="exa -al --color=always --group-directories-first"
 
-export PS1="\n[\u]\[\033[34m\]\w\[\033[31m\]\$(__git_ps1)\[\033[00m\]\n>> "
+export PS1="\n[\u]\[\033[34m\]\w\[\033[32m\]\$(__git_ps1)\[\033[00m\]\n>> "
