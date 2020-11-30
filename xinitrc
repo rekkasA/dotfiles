@@ -1,6 +1,7 @@
-compton --config /home/arekkas/.config/compton.conf &
+compton --config $HOME/.config/compton.conf &
+pcmanfm -d &
 dunst &
-feh --bg-center /home/arekkas/wallpapers/0296.jpg &
+feh --bg-center $HOME/Documents/wallpapers/0296.jpg &
 xrandr --auto --output HDMI-1 --right-of DP-2 &
 emacs --daemon &
 exec slstatus &
