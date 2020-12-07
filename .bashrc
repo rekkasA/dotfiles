@@ -122,3 +122,4 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 export PS1="\n[\u]\[\033[34m\]\w\[\033[32m\]\$(__git_ps1)\[\033[00m\]\n>> "
 source "$HOME/.cargo/env"
+eval "$(starship init bash)"
