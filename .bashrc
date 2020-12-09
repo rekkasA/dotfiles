@@ -112,6 +112,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f /usr/local/bin/screenfetch-ld ]
+then
+	screenfetch-ld
+fi
 
 alias em="emacsclient -c -a 'emacs'"
 alias ls="exa -al --color=always --group-directories-first"
