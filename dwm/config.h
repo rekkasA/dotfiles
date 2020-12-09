@@ -7,11 +7,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "mononoki:size=13" };
 static const char dmenufont[]       = "mononki:size=13";
-static const char col_gray1[]       = "#292d3e";
-static const char col_gray2[]       = "#292d3e"; /* border color unfocused windows */
-static const char col_gray3[]       = "#96b5b4";
-static const char col_gray4[]       = "#d7d7d7";
-static const char col_cyan[]        = "#151821";
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#7C4780";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -89,7 +89,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacsclient -c -a 'emacs'") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("rstudio") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("virt-manager") },
-	{ MODKEY|ShiftMask,             XK_g,      spawn,          SHCMD("/usr/bin/thunar") },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("/usr/bin/thunar") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
