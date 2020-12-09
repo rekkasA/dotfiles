@@ -1,4 +1,5 @@
-compton --config $HOME/.config/compton.conf &
+# compton --config $HOME/.config/compton.conf &
+picom --experimental-backends --config $HOME/.config/picom/picom.conf &
 pcmanfm -d &
 dunst &
 feh --bg-center $HOME/Documents/wallpapers/0296.jpg &

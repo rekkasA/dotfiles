@@ -89,6 +89,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacsclient -c -a 'emacs'") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("rstudio") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("virt-manager") },
+	{ MODKEY|ShiftMask,             XK_g,      spawn,          SHCMD("/usr/bin/thunar") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
