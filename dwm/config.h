@@ -90,6 +90,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("rstudio") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("virt-manager") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("/usr/bin/thunar") },
+	{ MODKEY,                       XK_F1,     spawn,          SHCMD("setxkbmap us") },
+	{ MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap gr") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
