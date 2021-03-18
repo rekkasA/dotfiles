@@ -75,7 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    # alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -114,6 +114,11 @@ fi
 
 alias em="emacsclient -c -a 'emacs'"
 alias ls="exa -al --color=always --group-directories-first"
+alias fr="cd ~/Documents/Projects/arekkas_HteFramework_XXXX_2021"
+alias sim="cd ~/Documents/Projects/arekkas_HteSimulation_XXXX_2021"
+alias legend="cd ~/Documents/Projects/arekkas_LegendHte_XXXX_2021"
+alias ter="cd ~/Documents/Projects/arekkas_TerVsBis_XXXX_2021"
+
 
 
 

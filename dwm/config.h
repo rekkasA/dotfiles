@@ -5,7 +5,10 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "mononoki:size=13" };
+static const char *fonts[]          = {"Mononoki Nerd Font:size=13:antialias=true:autohint=true",
+                                  "Hack:size=8:antialias=true:autohint=true",
+                                  "JoyPixels:size=10:antialias=true:autohint=true"
+						     	};
 static const char dmenufont[]       = "mononki:size=13";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -76,7 +79,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
@@ -85,13 +87,14 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("makeDwm") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("firefox") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("brave-browser") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacsclient -c -a 'emacs'") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("rstudio") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("virt-manager") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("/usr/bin/thunar") },
 	{ MODKEY,                       XK_F1,     spawn,          SHCMD("setxkbmap us") },
 	{ MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap gr") },
+	{ MODKEY,                       XK_space,  spawn,          SHCMD("rofi -modi drun,run -show drun -show-icons") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
