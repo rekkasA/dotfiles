@@ -1,3 +1,11 @@
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(when (display-graphic-p)
+   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
+
 (setq inhibit-startup-message t)
 
 (setq
@@ -159,9 +167,14 @@
                 (org-level-8 . 1.1)))
   (set-face-attribute (car face) nil :weight 'regular :height (cdr face)))
 
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
+(use-package org-bullets
+  :ensure t
+  :init
+  (setq org-bullets-bullet-list
+  '("◎" "○" "◉" "⚫" "►" "◇"))
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 
 (custom-set-variables
