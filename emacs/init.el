@@ -17,6 +17,8 @@
 (tooltip-mode -1)
 (set-fringe-mode 10)
 (menu-bar-mode -1)
+(setq visible-bell t)
+
 
 ;; Quit command with escape
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
@@ -153,7 +155,7 @@
   (setq org-log-done 'time)
   (setq org-log-into-drawer t)
   (setq org-agenda-files
-	'("~/test.org")))
+	'("~/Documents/todo.org")))
 
 (dolist (face '((org-level-1 . 1.2)
                 (org-level-2 . 1.1)
