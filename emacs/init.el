@@ -24,8 +24,6 @@
 ;; Font settings
 (set-face-attribute 'default nil :font"Inconsolata Nerd Font" :height 160)
 
-;; Set theme
-(load-theme 'doom-tomorrow-day t)
 
 ;; Initialize package sources
 (require 'package)
@@ -176,6 +174,8 @@
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
+;; Set theme
+(load-theme 'doom-tomorrow-day t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
