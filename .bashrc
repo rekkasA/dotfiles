@@ -118,6 +118,7 @@ alias fr="cd ~/Documents/Projects/arekkas_HteFramework_XXXX_2021"
 alias sim="cd ~/Documents/Projects/arekkas_HteSimulation_XXXX_2021"
 alias legend="cd ~/Documents/Projects/arekkas_LegendHte_XXXX_2021"
 alias ter="cd ~/Documents/Projects/arekkas_TerVsBis_XXXX_2021"
+alias rproj="open *.Rproj"
 
 
 

@@ -1,5 +1,4 @@
 set relativenumber
-set tw=79
 
 if has('filetype')
   filetype indent plugin on
