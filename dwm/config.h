@@ -30,8 +30,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Gimp",            NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",         NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Brave-browser",   NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "RStudio",         NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "qpdfview",        NULL,       NULL,       1 << 2,       0,           -1 },
 };
 
 /* layout(s) */
@@ -95,6 +98,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F1,     spawn,          SHCMD("setxkbmap us") },
 	{ MODKEY,                       XK_F2,     spawn,          SHCMD("setxkbmap gr") },
 	{ MODKEY,                       XK_space,  spawn,          SHCMD("rofi -modi drun,run -show drun -show-icons") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("flameshot gui") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
